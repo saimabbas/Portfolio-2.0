@@ -21,7 +21,7 @@
 html,
 body {
   width: 100%;
-  background-color: var(--bgc);
+  background-color: var(--cream);
 }
 a {
   text-decoration: none;
@@ -107,6 +107,7 @@ input {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 0 0 1000px 1000px;
 }
 .header-content {
   height: 6.5rem;
@@ -281,6 +282,7 @@ input {
   background-color: var(--green);
   font-size: 1.25rem;
   color: var(--cream);
+  white-space: nowrap;
 }
 /* Portfolio */
 .portfolio {
@@ -486,6 +488,13 @@ input {
   font-size: 1.65rem;
 }
 @media only screen and (max-width: 1100px) {
+  .stack {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  .hero-content {
+    max-height: unset;
+  }
   .hero-left h1 {
     font-size: 3.75rem;
   }
@@ -515,6 +524,9 @@ input {
     padding: 0.75rem 2rem;
     border-radius: 0.35rem;
     font-size: 1.5rem;
+  }
+  .header {
+    border-radius: 0 0 30px 30px;
   }
   .header-right > a {
     display: none;
@@ -571,7 +583,7 @@ input {
     top: 0;
     right: 0;
     left: unset;
-    transform: translate(-5.5rem, 1.5rem);
+    transform: translate(-5.5rem, 0);
     z-index: 15;
     width: 3.5rem;
     height: 3.5rem;
@@ -583,7 +595,7 @@ input {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-1.5rem, 1.5rem);
+    transform: translate(-1.5rem, 0);
     z-index: 15;
     width: 3.5rem;
     height: 3.5rem;
@@ -630,5 +642,19 @@ input {
   }
   .left-portfolio main {
     margin: 1.5rem 0 0 0;
+  }
+  .stack-box-inner {
+    padding: 0 0.75rem;
+  }
+  .about-content > * {
+    margin: 0 0 1.5rem 0;
+  }
+  .about i {
+    margin: 2.5rem 0 1rem 0;
+  }
+  .portfolio-slider-container {
+    border-radius: 0;
+    background-color: var(--white);
+    padding: 0;
   }
 }
