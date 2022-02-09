@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="webexhaust">
+      <!-- Header -->
+      <div class="header">
+        <div class="box">
+          <div class="header-content">
+            <h1 onclick="moveToSection1()" class="header-left cursive">
+              webexhaust
+            </h1>
+            <div class="header-right">
+              <a onclick="moveToSection1()">Home</a>
+              <a onclick="moveToSection2()">Porfolio</a>
+              <a onclick="moveToSection3()">About</a>
+              <a onclick="moveToSection4()">Hire Me</a>
+              <button class="btn-style filled-btn-cream">
+                <a target="__blank" href="https://www.fiverr.com/webexhaust"
+                  >Fiverr Profile</a
+                >
+              </button>
+              <span onclick="openHeader()" class="open-header">
+                <i class="fas fa-bars"></i>
+              </span>
+              <span onclick="closeHeader()" class="close-header"
+                ><i class="fas fa-times"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="header-mob">
+          <div class="box">
+            <div class="header-mob-content">
+              <a onclick="moveToSection1Mob()">Home</a>
+              <a onclick="moveToSection2Mob()">Porfolio</a>
+              <a onclick="moveToSection3Mob()">About</a>
+              <a onclick="moveToSection4Mob()">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div id="hero" class="hero">
+        <div class="box">
+          <div class="hero-content">
+            <div class="hero-left">
+              <h1 class="cursive">
+                Need a Website?
+                <br />
+                I'm here ...
+              </h1>
+              <p>
+                I am Saim Abbas and I'm a Frontend Developer based in Multan
+                (The City of Saints), Pakistan.
+                <br />
+                I am working as a
+                <i>Senior Frontend Developer at 5D Solutions Dubai, LLC.</i>
+                I am also a <i>Level 2 Seller on Fiverr.</i>
+              </p>
+              <button
+                onclick="moveToSection4()"
+                class="btn-style filled-btn-green"
+              >
+                Let's Talk!
+              </button>
+            </div>
+            <div class="hero-right">
+              <img src="assets/hero-img.jpg" alt="hero" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio -->
+      <div id="portfolio" class="portfolio section">
+        <div class="box">
+          <div class="section-heading cursive">- Porfolio -</div>
+          <div class="portfolio-content">
+            <span class="portfolio-arrow portfolio-left">
+              <i class="fas fa-long-arrow-alt-left"></i>
+            </span>
+            <div class="portfolio-slider-container">
+              <div class="portfolio-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="portfolio-details">
+                      <div class="left-portfolio">
+                        <a target='__blank' href='https://www.youtube.com/' class="cursive">OutKast <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>NFT Game </h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Ex, ducimus! Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Qui fuga cupiditate
+                          ullam reprehenderit minima fugit dignissimos voluptas
+                          odit iste quod!
+                        </p>
+                        <main>
+                          <h3 class='cursive'>Client Reference</h3>
+                          <p>abc@gmail.com</p>
+                        </main>
+                        <main>
+                          <h3 class='cursive'>Client Review</h3>
+                          <p>abc@gmail.com</p>
+                        </main>
+                        <main>
+                          <h3 class='cursive'>Tech Stack</h3>
+                          <p>abc@gmail.com</p>
+                        </main>
+                      </div>
+
+                      <div class="right-portfolio">
+                        <img src="assets/portfolio-img-1.jpeg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="portfolio-arrow portfolio-right">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about" class="about section">
+        <div class="box">
+          <h2 class="section-heading cursive">- About -</h2>
+          <div class="about-content">
+            <!-- <img src="assets/setup.jpg" alt="" /> -->
+            <p>
+              I am Saim Abbas and I am a Frontend Developer based in Multan (The
+              City of Saints), Pakistan. I am working as a Senior Frontend
+              Developer at 5D Solutions Dubai, LLC. I am also a Level 2
+              Freelancer on Fiverr.
+            </p>
+            <p>
+              I joined 5D Solutions back in Octuber 2020 and since then, I have
+              been handling all the frontend of three major projects of the
+              company. In my career at 5D Solutions, I have majorly worked on
+              three products i.e. EazyProcure, Jasad, and an ERP.
+            </p>
+            <p>
+              But freelancing has proven to be the most exiting thing to happen
+              in my life. I have worked on dozens of projects in my freelancing
+              career. Being a Level 2 Freelancer on Fiverr was also a very
+              challenging milestone to achieve. <br />
+              Here are the top industries I have most of my portfolio in:
+              <ul>
+                <li>NFT Marketplaces</li>
+                <li>E-commerce Platforms</li>
+                <li>Restraunt Websites</li>
+                <li>E-learning Websites</li>
+                <li>ERP's</li>
+                <li>Non-Profit Organizations</li>
+                <li>Portfolio Websites</li>
+                <li>Dashboards of Webapps</li>
+              </ul>
+            </p>
+            <p>I am an enthusiatic learner and keep on exploring new technologies. I am my grip on complex UI's development, fascinating web animations, and managable code structures. Here's my tech-stack:</p>
+            <div class="stack">
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 90%'>
+                    <span>HTML/HTML5 (90%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 85%'>
+                    <span>CSS/CSS3 (85%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 90%'>
+                    <span>SASS (90%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 95%'>
+                    <span>BOOTSTRAP/TAILWIND CSS/ MATERIAL UI (95%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 90%'>
+                    <span>STYLED COMPONENTS (90%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 75%'>
+                    <span>JAVASCRIPT (75%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 85%'>
+                    <span>JQUERY (85%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 80%'>
+                    <span>GSAP (80%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 80%'>
+                    <span>REACT (80%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 75%'>
+                    <span>REACT NATIVE (75%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 60%'>
+                    <span>TYPESCRIPT (60%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 50%'>
+                    <span>NODE (LEARNING) (50%)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-box">
+                <div class="stack-box-outer">
+                  <div class="stack-box-inner" style='width: 80%'>
+                    <span>GITHUB/GITLAB/BITBUCKET (80%)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="cursive"
+              >- I believe my frontend skills can make the UI of your business
+              website breathable -</i
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="contact section">
+        <div class="box">
+          <div class="section-heading cursive">- Contact -</div>
+          <div class="contact-content">
+            <div class="left-contact">
+              <h2 class="cursive">
+                I would <br />
+                love to hear <br />
+                from you!
+              </h2>
+              <h3>
+                Call me now at +923040814305 or hire me on Fiverr or Upwork.
+              </h3>
+            </div>
+            <div class="right-contact">
+              <div class="bar-info">
+                <i class="fas fa-phone"></i>
+                <p>+923040814305</p>
+              </div>
+              <div class="bar-info">
+                <i class="fas fa-envelope"></i>
+                <p>saim@webexhaust.com</p>
+              </div>
+              <main>
+                <div class="icons">
+                  <a
+                    target="__blank"
+                    href="https://www.discordapp.com/users/Saim Abbas#6863"
+                  >
+                    <i class="fab fa-discord"></i>
+                  </a>
+                  <a target="__blank" href="https://wa.me/+923040814305">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a
+                    target="__blank"
+                    href="https://www.linkedin.com/in/saimabbas/"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    target="__blank"
+                    href="https://twitter.com/SaimAbb24904777"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a target="__blank" href="https://github.com/saimabbas">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </main>
+              <a
+                target="__blank"
+                href="https://www.fiverr.com/webexhaust"
+                class="btn-style filled-btn-green"
+              >
+                Hire me on Fiverr
+              </a>
+              <a
+                target="__blank"
+                href="https://www.upwork.com/freelancers/~0121ee63d18e06bd50"
+                class="btn-style outline-btn-green"
+              >
+                Hire me on UpWork
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollToPlugin);
+
+      const openHeader = () => {
+        $(".open-header").css({
+          display: "none",
+        });
+        $(".close-header").css({
+          display: "flex",
+        });
+        $(".header-mob").css({
+          display: "flex",
+        });
+      };
+      const closeHeader = () => {
+        $(".open-header").css({
+          display: "flex",
+        });
+        $(".close-header").css({
+          display: "none",
+        });
+        $(".header-mob").css({
+          display: "none",
+        });
+      };
+
+      const moveToSection1 = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: ".webexhaust",
+          },
+          ease: Power4.easeInOut,
+        });
+      };
+      const moveToSection2 = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#portfolio",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+      };
+      const moveToSection3 = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#about",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+      };
+      const moveToSection4 = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#contact",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+      };
+
+      const moveToSection1Mob = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: ".webexhaust",
+          },
+          ease: Power4.easeInOut,
+        });
+        closeHeader();
+      };
+      const moveToSection2Mob = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#portfolio",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+        closeHeader();
+      };
+      const moveToSection3Mob = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#about",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+        closeHeader();
+      };
+      const moveToSection4Mob = () => {
+        gsap.to(window, {
+          scrollTo: {
+            y: "#contact",
+            offsetY: 50,
+          },
+          ease: Power4.easeInOut,
+        });
+        closeHeader();
+      };
+      var swiper = new Swiper(".portfolio-slider", {
+        navigation: {
+          nextEl: ".portfolio-right",
+          prevEl: ".portfolio-left",
+        },
+        loop: true,
+        spaceBetween: 50,
+        speed: 750,
+      });
+    </script>
+  </body>
+</html>
