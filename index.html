@@ -1,605 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="I am Saim, a Frontend Developer based in Pakistan. I am working as a Senior Frontend Developer at 5D Solutions Dubai, LLC. I am also a Level 2 Seller on Fiverr.">
+  <meta name="keywords" content="Frontend Developer">
+  <meta name="author" content="Saim Abbas">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+<link rel="shortcut icon" href="assets/W.ico" type="image/x-icon">
+  <title>webexhaust</title>
+</head>
 
-  <body><!-- Header -->
-    <div class="header">
-      <div class="header-header">
-        <div class="box">
-          <div class="header-content">
-            <h1 onclick="moveToSection1()" class="header-left cursive">
-              webexhaust
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-header">
+      <div class="box">
+        <div class="header-content">
+          <h1 onclick="moveToSection1()" class="header-left cursive">
+            webexhaust
+          </h1>
+          <div class="header-right">
+            <a onclick="moveToSection1()">Home</a>
+            <a onclick="moveToSection2()">Porfolio</a>
+            <a onclick="moveToSection3()">About</a>
+            <a onclick="moveToSection4()">Hire Me</a>
+            <button class="btn-style filled-btn-cream">
+              <a target="__blank" href="https://www.fiverr.com/webexhaust">Fiverr Profile</a>
+            </button>
+            <span onclick="openHeader()" class="open-header">
+              <i class="material-icons material-icons-outlined open-header">
+                menu
+                </i>
+            </span>
+            <span onclick="closeHeader()" class="close-header"><i class="material-icons material-icons-outlined close-header">
+              clear
+              </i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-mob">
+      <div class="box">
+        <div class="header-mob-content">
+          <a onclick="moveToSection1Mob()">Home</a>
+          <a onclick="moveToSection2Mob()">Porfolio</a>
+          <a onclick="moveToSection3Mob()">About</a>
+          <a onclick="moveToSection4Mob()">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="webexhaust">
+
+
+    <!-- Hero Section -->
+    <div id="hero" class="hero">
+      <div class="box">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1 class="cursive">
+              <!-- Need a Website?
+              <br />
+              I'm Here ... -->
+              I Shape Exquisite Websites!
             </h1>
-            <div class="header-right">
-              <a onclick="moveToSection1()">Home</a>
-              <a onclick="moveToSection2()">Porfolio</a>
-              <a onclick="moveToSection3()">About</a>
-              <a onclick="moveToSection4()">Hire Me</a>
-              <button class="btn-style filled-btn-cream">
-                <a target="__blank" href="https://www.fiverr.com/webexhaust"
-                  >Fiverr Profile</a
-                >
-              </button>
-              <span onclick="openHeader()" class="open-header">
-                <i class="fas fa-bars"></i>
-              </span>
-              <span onclick="closeHeader()" class="close-header"
-                ><i class="fas fa-times"></i
-              ></span>
-            </div>
+            <p>
+              I am Saim Abbas and I'm a Frontend Developer based in Multan
+              (The City of Saints), Pakistan.
+              <br />
+              I am working as a
+              <i>Senior Frontend Developer at 5D Solutions Dubai, LLC.</i>
+              I am also a <i>Level 2 Seller on Fiverr.</i>
+            </p>
+            <button onclick="moveToSection4()" class="btn-style filled-btn-green">
+              Let's Talk!
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="header-mob">
-        <div class="box">
-          <div class="header-mob-content">
-            <a onclick="moveToSection1Mob()">Home</a>
-            <a onclick="moveToSection2Mob()">Porfolio</a>
-            <a onclick="moveToSection3Mob()">About</a>
-            <a onclick="moveToSection4Mob()">Hire Me</a>
+          <div class="hero-right">
+            <img src="assets/pro2.jpeg" alt="hero" />
           </div>
         </div>
       </div>
     </div>
-    <div class="webexhaust">
-      
-
-      <!-- Hero Section -->
-      <div id="hero" class="hero">
-        <div class="box">
-          <div class="hero-content">
-            <div class="hero-left">
-              <h1 class="cursive">
-                Need a Website?
-                <br />
-                I'm Here ...
-              </h1>
-              <p>
-                I am Saim Abbas and I'm a Frontend Developer based in Multan
-                (The City of Saints), Pakistan.
-                <br />
-                I am working as a
-                <i>Senior Frontend Developer at 5D Solutions Dubai, LLC.</i>
-                I am also a <i>Level 2 Seller on Fiverr.</i>
-              </p>
-              <button
-                onclick="moveToSection4()"
-                class="btn-style filled-btn-green"
-              >
-                Let's Talk!
-              </button>
-            </div>
-            <div class="hero-right">
-              <img src="assets/pro.jpg" alt="hero" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio -->
-      <div id="portfolio" class="portfolio section">
-        <div class="box">
-          <div class="section-heading cursive">- Portfolio -</div>
-          <div class="portfolio-content">
-            <span class="portfolio-arrow portfolio-left">
-              <i class="fas fa-long-arrow-alt-left"></i>
-            </span>
-            <div class="portfolio-slider-container">
-              <div class="portfolio-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-details">
-                      <div class="left-portfolio">
-                        <a target='__blank' href='https://outkast.world/'  class="cursive">OutKast <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <h2>NFT Game </h2>
-                        <p>
-                          OutKast is a NFT Game where you can select missions, choose your characters, fuse the characters together, and play the game. The UI of this game project was pretty cool and complex at the same time. I had to finish this project in a few days and we finally made it happen.
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio section">
+      <div class="box">
+        <div class="section-heading cursive">- Portfolio -</div>
+        <div class="portfolio-content">
+          <span class="portfolio-arrow portfolio-left">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </span>
+          <div class="portfolio-slider-container">
+            <div class="portfolio-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="portfolio-details">
+                    <div class="left-portfolio">
+                      <a target='__blank' href='https://outkast.world/' class="cursive">OutKast <i class="material-icons">
+                        north_east
+                        </i></a>
+                      <h2>NFT Game </h2>
+                      <p>
+                        OutKast is a NFT Game where you can select missions, choose your characters, fuse the characters
+                        together, and play the game. 
+                      </p>
+                      <main>
+                        <h3 class='cursive'>Tech Stack</h3>
+                        <p>Html5, Css3, Javascript, JQuery</p>
+                      </main>
+                      <main>
+                        <h3 class='cursive'>Client Review <span>
+                            <i class="material-icons material-icons-outlined">
+                              star
+                            </i>
+                            <i class="material-icons material-icons-outlined">
+                              star
+                            </i>
+                            <i class="material-icons material-icons-outlined">
+                              star
+                            </i>
+                            <i class="material-icons material-icons-outlined">
+                              star
+                            </i>
+                            <i class="material-icons material-icons-outlined">
+                              star
+                            </i>
+                          </span>
+                        </h3>
+                        <p>Saim's work is phenominal and fast. He managed to deliver on time and never missed a
+                          deadline. He is quick to update on our request for revisions.
                         </p>
-                        <main>
-                          <h3 class='cursive'>Client Review <span>
-                            <i class="material-icons material-icons-outlined">
-                              star
-                              </i>
-                            <i class="material-icons material-icons-outlined">
-                              star
-                              </i>
-                            <i class="material-icons material-icons-outlined">
-                              star
-                              </i>
-                            <i class="material-icons material-icons-outlined">
-                              star
-                              </i>
-                            <i class="material-icons material-icons-outlined">
-                              star
-                              </i>
-                          </span></h3>
-                          <p>Saim's work is phenominal and fast. He managed to deliver on time and never missed a deadline. He is quick to update on our request for revisions.
+                        <i>John ~ Project Partner</i>
+                      </main>
+                    </div>
 
-                          </p>
-                        </main>
-                        <main>
-                          <h3 class='cursive'>Tech Stack</h3>
-                          <p>Html5, Css3, Javascript, JQuery</p>
-                        </main>
-                      </div>
-
-                      <div class="right-portfolio">
-                        <img src="assets/outkast.png" alt="" />
-                      </div>
+                    <div class="right-portfolio">
+                      <img src="assets/outkast.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="portfolio-details">
-                      <div class="left-portfolio">
-                        <a target='__blank' href='https://protutoronline.netlify.app/'  class="cursive">ProTutorOnline <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <h2 >E-learning Platform </h2>
-                        <p>
-                          ProTutorOnline is an e-learning platforms where you can learn and teach differnt languages and subjects. Its major competitor is preply.
-                        </p>
-                        <main>
-                          <h3 class='cursive'>Client Review <span>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-details">
+                    <div class="left-portfolio">
+                      <a target='__blank' href='https://protutoronline.netlify.app/' class="cursive">ProTutorOnline <i class="material-icons">
+                        north_east
+                        </i></a>
+                      <h2>E-learning Platform </h2>
+                      <p>
+                        ProTutorOnline is an e-learning platforms where you can learn and teach differnt languages and
+                        subjects. Its major competitor is preply.
+                      </p>
+                      <main>
+                        <h3 class='cursive'>Tech Stack</h3>
+                        <p>React, Gsap, Css3, Javascript</p>
+                      </main>
+                      <main>
+                        <h3 class='cursive'>Client Review <span>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                           </span></h3>
-                          <p>I can vouch for this guy. He's very professional and understanding. Great work Indeed!
-                          </p>
-                        </main>
-                        <main>
-                          <h3 class='cursive'>Tech Stack</h3>
-                          <p>React, Gsap, Css3, Javascript</p>
-                        </main>
-                      </div>
+                        <p>I can vouch for this guy. He's very professional and understanding. Great work Indeed!
+                        </p>
+                        <i>Nelly ~ Project Owner</i>
+                      </main>
+                    </div>
 
-                      <div class="right-portfolio">
-                        <img src="assets/protutoronline.png" alt="" />
-                      </div>
+                    <div class="right-portfolio">
+                      <img src="assets/protutoronline.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="portfolio-details">
-                      <div class="left-portfolio">
-                        <a target='__blank' href='https://kosolutions.org/'  class="cursive">KoSolutions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <h2 >Consulting Firm</h2>
-                        <p>
-                          KoSolutions is a consulting firm which provides data-driven and first principle digitization & innovation consulting.
-                        </p>
-                        <main>
-                          <h3 class='cursive'>Client Review <span>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-details">
+                    <div class="left-portfolio">
+                      <a target='__blank' href='https://kosolutions.org/' class="cursive">KoSolutions <i class="material-icons">
+                        north_east
+                        </i></a>
+                      <h2>Consulting Firm</h2>
+                      <p>
+                        KoSolutions is a consulting firm which provides data-driven and first principle digitization &
+                        innovation consulting.
+                      </p>
+                      <main>
+                        <h3 class='cursive'>Tech Stack</h3>
+                        <p>Next.js, Css3 Animations, JavaScript</p>
+                      </main>
+                      <main>
+                        <h3 class='cursive'>Client Review <span>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                           </span></h3>
-                          <p>I needed to have the online presence of my consulting company completed in a short time and with high quality. Saim met my high demands with flexible communication and his expertise in front-end developments. He was also able to advise me on back-end issues. For this reason, I can recommend Saim for international cooperations with a high demand for quality.
-                          </p>
-                        </main>
-                        <main>
-                          <h3 class='cursive'>Tech Stack</h3>
-                          <p>Next.js, Css3 Animations, JavaScript</p>
-                        </main>
-                      </div>
+                        <p>I needed to have the online presence of my consulting company completed in a short time and
+                          with high quality. Saim met my high demands with flexible communication and his expertise in
+                          front-end developments. He was also able to advise me on back-end issues. For this reason, I
+                          can recommend Saim for international cooperations with a high demand for quality.
+                        </p>
+                        <i>Sebastian ~ Project Owner</i>
+                      </main>
+                    </div>
 
-                      <div class="right-portfolio">
-                        <img src="assets/kosolutions.png" alt="" />
-                      </div>
+                    <div class="right-portfolio">
+                      <img src="assets/kosolutions.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="portfolio-details">
-                      <div class="left-portfolio">
-                        <a target='__blank' href='https://protutoronline.netlify.app/'  class="cursive">DankBank <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <h2 >Memes Company</h2>
-                        <p>
-                         DankBank trades iconic moments in the history i.e. memes. 
-                        </p>
-                        <main>
-                          <h3 class='cursive'>Client Review <span>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-details">
+                    <div class="left-portfolio">
+                      <a class="cursive">DankBank </a>
+                      <h2>Memes Company</h2>
+                      <p>
+                        DankBank trades iconic moments in the history i.e. memes.
+                      </p>
+                      <main>
+                        <h3 class='cursive'>Tech Stack</h3>
+                        <p>Next.js, Styles Components, Typescript, Javascript</p>
+                      </main>
+                      <main>
+                        <h3 class='cursive'>Client Review <span>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                             <i class="material-icons material-icons-outlined">
                               star
-                              </i>
+                            </i>
                           </span></h3>
-                          <p>
-                            Saim was a pleasure to work with. We had a tremendous task for him and he tackled it quickly and professionally. Saim is a great communicator -- he organized calls between us to discuss milestones for the project and conveyed his ideas elegantly and clearly. Saim is also tremendously punctual -- we worked together on multiple projects (each with several rounds of revision) and he delivered his work on time, every time. Saim will be my go-to for outsourcing front-end development work. He has all of the qualities you look for in a teammate/collaborator.
-                          </p>
-                        </main>
-                        <main>
-                          <h3 class='cursive'>Tech Stack</h3>
-                          <p>Next.js, Styles Components, Typescript, Javascript</p>
-                        </main>
-                      </div>
+                        <p>
+                          Saim was a pleasure to work with. We had a tremendous task for him and he tackled it quickly
+                          and professionally. Saim is a great communicator -- he organized calls between us to discuss
+                          milestones for the project and conveyed his ideas elegantly and clearly. Saim is also
+                          tremendously punctual -- we worked together on multiple projects (each with several rounds of
+                          revision) and he delivered his work on time, every time. Saim will be my go-to for outsourcing
+                          front-end development work. He has all of the qualities you look for in a
+                          teammate/collaborator.
+                        </p>
+                        <i>Sebastian ~ Project Partner</i>
+                      </main>
+                    </div>
 
-                      <div class="right-portfolio">
-                        <img src="assets/dankbank.png" alt="" />
-                      </div>
+                    <div class="right-portfolio">
+                      <img src="assets/dankbank.png" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <span class="portfolio-arrow portfolio-right">
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </span>
           </div>
-        </div>
-      </div>
-
-      <!-- About -->
-      <div id="about" class="about section">
-        <div class="box">
-          <h2 class="section-heading cursive">- About -</h2>
-          <div class="about-content">
-            <!-- <img src="assets/setup.jpg" alt="" /> -->
-            <p>
-              I am Saim Abbas and I am a Frontend Developer based in Multan (The
-              City of Saints), Pakistan. I am working as a Senior Frontend
-              Developer at 5D Solutions Dubai, LLC. I am also a Level 2
-              Freelancer on Fiverr.
-            </p>
-            <p>
-              I joined 5D Solutions back in Octuber 2020 and since then, I have
-              been handling all the frontend of three major projects of the
-              company. In my career at 5D Solutions, I have majorly worked on
-              three products i.e. EazyProcure, Jasad, and an ERP.
-            </p>
-            <p>
-              But freelancing has proven to be the most exiting thing to happen
-              in my life. I have worked on dozens of projects in my freelancing
-              career. Being a Level 2 Freelancer on Fiverr was also a 
-              challenging milestone to achieve. <br />
-              Here are the top industries I have most of my portfolio in:
-              <ul>
-                <li>NFT Marketplaces</li>
-                <li>E-commerce Platforms</li>
-                <li>Restraunt Websites</li>
-                <li>E-learning Websites</li>
-                <li>ERP's</li>
-                <li>Non-Profit Organizations</li>
-                <li>Portfolio Websites</li>
-                <li>Dashboards of Webapps</li>
-              </ul>
-            </p>
-            <p>I am an enthusiatic learner and keep on exploring new technologies. I am my grip on complex UI's development, fascinating web animations, and managable code structures. Here's my tech-stack:</p>
-            <div class="stack">
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 90%'>
-                    <span>HTML/HTML5 (90%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 85%'>
-                    <span>CSS/CSS3 (85%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 90%'>
-                    <span>SASS (90%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 95%'>
-                    <span>BOOTSTRAP/TAILWIND CSS/ MATERIAL UI (95%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 90%'>
-                    <span>STYLED COMPONENTS (90%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 75%'>
-                    <span>JAVASCRIPT (75%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 85%'>
-                    <span>JQUERY (85%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 80%'>
-                    <span>GSAP (80%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 80%'>
-                    <span>REACT (80%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 75%'>
-                    <span>REACT NATIVE (75%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 60%'>
-                    <span>TYPESCRIPT (60%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 50%'>
-                    <span>NODE (LEARNING) (50%)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="stack-box">
-                <div class="stack-box-outer">
-                  <div class="stack-box-inner" style='width: 80%'>
-                    <span>GITHUB/GITLAB/BITBUCKET (80%)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <i class="cursive"
-              >- I believe my frontend skills can make the UI of your business
-              website breathable -</i
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div id="contact" class="contact section">
-        <div class="box">
-          <div class="section-heading cursive">- Contact -</div>
-          <div class="contact-content">
-            <div class="left-contact">
-              <h2 class="cursive">
-                I would <br />
-                love to hear <br />
-                from you!
-              </h2>
-              <h3>
-                Call me now at +923040814305 or hire me on Fiverr or Upwork.
-              </h3>
-            </div>
-            <div class="right-contact">
-              <div class="bar-info">
-                <i class="fas fa-phone"></i>
-                <p>+923040814305</p>
-              </div>
-              <div class="bar-info">
-                <i class="fas fa-envelope"></i>
-                <p>saim@webexhaust.com</p>
-              </div>
-              <main>
-                <div class="icons">
-                  <a
-                    target="__blank"
-                    href="https://www.discordapp.com/users/Saim Abbas#6863"
-                  >
-                    <i class="fab fa-discord"></i>
-                  </a>
-                  <a target="__blank" href="https://wa.me/+923040814305">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a
-                    target="__blank"
-                    href="https://www.linkedin.com/in/saimabbas/"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    target="__blank"
-                    href="https://twitter.com/SaimAbb24904777"
-                  >
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a target="__blank" href="https://github.com/saimabbas">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </main>
-              <a
-                target="__blank"
-                href="https://www.fiverr.com/webexhaust"
-                class="btn-style filled-btn-green"
-              >
-                Hire me on Fiverr
-              </a>
-              <a
-                target="__blank"
-                href="https://www.upwork.com/freelancers/~0121ee63d18e06bd50"
-                class="btn-style outline-btn-green"
-              >
-                Hire me on UpWork
-              </a>
-            </div>
-          </div>
+          <span class="portfolio-arrow portfolio-right">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </span>
         </div>
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(ScrollToPlugin);
+    <!-- About -->
+    <div id="about" class="about section">
+      <div class="box">
+        <h2 class="section-heading cursive">- About -</h2>
+        <div class="about-content">
+          <!-- <img src="assets/setup.jpg" alt="" /> -->
+          <p>
+            I am Saim Abbas and I am a Senior Frontend Developer based in <b class='pakistan cursive'>Multan (The
+              City of Saints), Pakistan.</b> I am working as a <b>Senior Frontend
+                Developer at 5D Solutions Dubai, LLC.</b> I am also a <b>Level 2
+                  Freelancer on Fiverr.</b>
+          </p>
+          <p>
+            <b>I joined 5D Solutions back in Octuber 2020</b> and since then, I have
+            been handling all the frontend of three major projects of the
+            company. In my career at 5D Solutions, I have majorly worked on
+            three products i.e. EazyProcure, Jasad, and an ERP.
+          </p>
+          <p>
+            But freelancing has proven to be the most exiting thing to happen
+            in my life. I have worked on <b>dozens of projects</b> in my freelancing
+            career. Being a Level 2 Freelancer on Fiverr was also a
+            challenging milestone to achieve. <br />
+            Here are the top industries I have most of my portfolio in:
+          <ul>
+            <li>NFT Marketplaces</li>
+            <li>E-commerce Platforms</li>
+            <li>Restraunt Websites</li>
+            <li>E-learning Websites</li>
+            <li>ERP's</li>
+            <li>Non-Profit Organizations</li>
+            <li>Portfolio Websites</li>
+            <li>Dashboards of Webapps</li>
+          </ul>
+          </p>
+          <p>I am an enthusiatic learner and keep on exploring new technologies. I have my grip on <b>complex UI's
+            development, fascinating web animations, and managable code structures.</b> Here's my tech-stack:</p>
+          <div class="stack">
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 90%'>
+                  <span>HTML/HTML5 (90%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 85%'>
+                  <span>CSS/CSS3 (85%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 90%'>
+                  <span>SASS (90%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 95%'>
+                  <span>BOOTSTRAP/TAILWIND CSS/ MATERIAL UI (95%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 90%'>
+                  <span>STYLED COMPONENTS (90%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 75%'>
+                  <span>JAVASCRIPT (75%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 85%'>
+                  <span>JQUERY (85%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 80%'>
+                  <span>GSAP (80%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 80%'>
+                  <span>REACT (80%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 75%'>
+                  <span>REACT NATIVE (75%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 60%'>
+                  <span>TYPESCRIPT (60%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 50%'>
+                  <span>NODE (LEARNING) (50%)</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-box">
+              <div class="stack-box-outer">
+                <div class="stack-box-inner" style='width: 80%'>
+                  <span>GITHUB/GITLAB/BITBUCKET (80%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="cursive">- I believe my frontend skills can make the UI of your business
+            website breathable -</i>
+        </div>
+      </div>
+    </div>
 
-      const openHeader = () => {
-        $(".open-header").css({
-          display: "none",
-        });
-        $(".close-header").css({
-          display: "flex",
-        });
-        $(".header-mob").css({
-          display: "flex",
-        });
-      };
-      const closeHeader = () => {
-        $(".open-header").css({
-          display: "flex",
-        });
-        $(".close-header").css({
-          display: "none",
-        });
-        $(".header-mob").css({
-          display: "none",
-        });
-      };
+    <!-- Contact -->
+    <div id="contact" class="contact section">
+      <div class="box">
+        <div class="section-heading cursive">- Contact -</div>
+        <div class="contact-content">
+          <div class="left-contact">
+            <h2 class="cursive">
+              I would <br />
+              love to hear <br />
+              from you!
+            </h2>
+            <h3>
+              Call me now at +923040814305 or hire me on Fiverr or Upwork.
+            </h3>
+          </div>
+          <div class="right-contact">
+            <div class="bar-info">
+              <i class="material-icons material-icons-outlined open-header">
+                phone
+                </i>
+              <p>+923040814305</p>
+            </div>
+            <div class="bar-info">
+              <i class="material-icons material-icons-outlined open-header">
+                mail
+                </i>
+              <p>saim@webexhaust.com</p>
+            </div>
+            <main>
+              <div class="icons">
+                <a target="__blank" href="https://www.discordapp.com/users/Saim Abbas#6863">
+                  <i class="fab fa-discord"></i>
+                </a>
+                <a target="__blank" href="https://wa.me/+923040814305">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a target="__blank" href="https://www.linkedin.com/in/saimabbas/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a target="__blank" href="https://twitter.com/SaimAbb24904777">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a target="__blank" href="https://github.com/saimabbas">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </main>
+            <a target="__blank" href="https://www.fiverr.com/webexhaust" class="btn-style filled-btn-green">
+              Hire me on Fiverr
+            </a>
+            <a target="__blank" href="https://www.upwork.com/freelancers/~0121ee63d18e06bd50"
+              class="btn-style outline-btn-green">
+              Hire me on UpWork
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      const moveToSection1 = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: ".webexhaust",
-          },
-          ease: Power4.easeInOut,
-        });
-      };
-      const moveToSection2 = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#portfolio",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-      };
-      const moveToSection3 = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#about",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-      };
-      const moveToSection4 = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#contact",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-      };
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollToPlugin);
 
-      const moveToSection1Mob = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: ".webexhaust",
-          },
-          ease: Power4.easeInOut,
-        });
-        closeHeader();
-      };
-      const moveToSection2Mob = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#portfolio",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-        closeHeader();
-      };
-      const moveToSection3Mob = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#about",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-        closeHeader();
-      };
-      const moveToSection4Mob = () => {
-        gsap.to(window, {
-          scrollTo: {
-            y: "#contact",
-            offsetY: 50,
-          },
-          ease: Power4.easeInOut,
-        });
-        closeHeader();
-      };
-      var swiper = new Swiper(".portfolio-slider", {
-        navigation: {
-          nextEl: ".portfolio-right",
-          prevEl: ".portfolio-left",
-        },
-        loop: true,
-        spaceBetween: 50,
-        speed: 750,
-        autoHeight: true
+    const openHeader = () => {
+      $(".open-header").css({
+        display: "none",
       });
-    </script>
-  </body>
+      $(".close-header").css({
+        display: "flex",
+      });
+      $(".header-mob").css({
+        display: "flex",
+      });
+    };
+    const closeHeader = () => {
+      $(".open-header").css({
+        display: "flex",
+      });
+      $(".close-header").css({
+        display: "none",
+      });
+      $(".header-mob").css({
+        display: "none",
+      });
+    };
+
+    const moveToSection1 = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: ".webexhaust",
+        },
+        ease: Power4.easeInOut,
+      });
+    };
+    const moveToSection2 = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#portfolio",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+    };
+    const moveToSection3 = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#about",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+    };
+    const moveToSection4 = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#contact",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+    };
+
+    const moveToSection1Mob = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: ".webexhaust",
+        },
+        ease: Power4.easeInOut,
+      });
+      closeHeader();
+    };
+    const moveToSection2Mob = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#portfolio",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+      closeHeader();
+    };
+    const moveToSection3Mob = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#about",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+      closeHeader();
+    };
+    const moveToSection4Mob = () => {
+      gsap.to(window, {
+        scrollTo: {
+          y: "#contact",
+          offsetY: 50,
+        },
+        ease: Power4.easeInOut,
+      });
+      closeHeader();
+    };
+    var swiper = new Swiper(".portfolio-slider", {
+      navigation: {
+        nextEl: ".portfolio-right",
+        prevEl: ".portfolio-left",
+      },
+      loop: true,
+      spaceBetween: 50,
+      speed: 750,
+      autoHeight: true
+    });
+  </script>
+</body>
+
 </html>
