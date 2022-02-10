@@ -268,15 +268,15 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1.5rem 5rem;
-  margin: 0 0 2.5rem 0;
+  grid-gap: 3.5rem 5rem;
+  margin: 2.5rem 0;
 }
 .stack-box {
   width: 100%;
 }
 .stack-box-outer {
   width: 100%;
-  height: 2.5rem;
+  height: 0.5rem;
   background-color: rgba(97, 191, 174, 0.35);
 }
 .stack-box-inner {
@@ -288,8 +288,15 @@ input {
   padding: 0 1.5rem;
   background-color: var(--green);
   font-size: 1.25rem;
-  color: var(--cream);
   white-space: nowrap;
+  position: relative;
+}
+.stack-box-inner span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0rem, -100%);
+  color: var(--green);
 }
 /* Portfolio */
 .portfolio {
@@ -519,7 +526,8 @@ input {
 @media only screen and (max-width: 1100px) {
   .stack {
     grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
+    grid-gap: 3.5rem;
+    margin: 2.5rem 0 1.5rem 0 !important;
   }
   .hero-content {
     max-height: unset;
