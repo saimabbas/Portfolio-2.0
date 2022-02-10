@@ -151,6 +151,7 @@ input {
 .header-mob {
   display: none;
   width: 100%;
+  height: 100vh;
   background: var(--cream);
   position: absolute;
   bottom: 0;
@@ -159,6 +160,8 @@ input {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   padding: 6.5rem 0 0 0;
   z-index: 1000;
+  align-items: center;
+  justify-content: center;
 }
 .header-header {
   width: 100%;
@@ -172,14 +175,22 @@ input {
   padding: 2.5rem 0 0 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 .header-mob-content a {
-  font-size: 1.65rem;
+  font-size: 2.75rem;
   color: var(--green);
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 2.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+.header-mob-content main {
+  width: 5rem;
+  height: 1px;
+  background-color: var(--green);
+  margin: 5rem 0;
 }
 /* Hero Section */
 .hero {
@@ -276,7 +287,7 @@ input {
 }
 .stack-box-outer {
   width: 100%;
-  height: 0.5rem;
+  height: 0.35rem;
   background-color: rgba(97, 191, 174, 0.35);
 }
 .stack-box-inner {
@@ -287,7 +298,6 @@ input {
   justify-content: flex-start;
   padding: 0 1.5rem;
   background-color: var(--green);
-  font-size: 1.25rem;
   white-space: nowrap;
   position: relative;
 }
@@ -295,8 +305,15 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0rem, -100%);
+  transform: translate(0rem, -115%);
   color: var(--green);
+  font-size: 1.25rem;
+}
+.pakistan {
+  color: var(--green);
+}
+.about b {
+  font-weight: 500;
 }
 /* Portfolio */
 .portfolio {
@@ -339,8 +356,8 @@ input {
   display: flex;
   align-items: center;
 }
-.left-portfolio a svg {
-  font-size: 2.25rem;
+.left-portfolio a i {
+  font-size: 2.5rem;
   margin: 0 0 0 0.75rem;
 }
 .left-portfolio main {
@@ -380,6 +397,13 @@ input {
   font-size: 1.5rem;
   color: var(--dark);
 }
+.left-portfolio main > i {
+  width: 100%;
+  color: var(--green);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.75rem 0 0 0;
+}
 .portfolio-details {
   width: 100%;
   display: grid;
@@ -404,10 +428,7 @@ input {
 }
 .right-portfolio img {
   width: 100%;
-  height: 40rem;
-  object-fit: cover;
-  object-position: top left;
-  vertical-align: middle;
+  object-fit: contain;
 }
 .portfolio-left {
   position: absolute;
@@ -501,10 +522,10 @@ input {
   color: var(--dark);
   font-weight: 500;
 }
-.header-right svg {
-  font-size: 2rem;
-  color: var(--bgc);
-  width: 1.75rem;
+.header-right span i {
+  font-size: 2.5rem;
+  color: var(--cream);
+  width: 2.5rem;
 }
 .header-right span {
   display: none;
@@ -514,9 +535,9 @@ input {
   align-items: center;
   justify-content: flex-start;
 }
-.bar-info svg {
+.bar-info i {
   color: var(--green);
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin: 0 1rem 0 0;
 }
 .bar-info p {
@@ -693,5 +714,8 @@ input {
   }
   .header-header {
     border-radius: 0 0 30px 30px;
+  }
+  .left-portfolio a {
+    font-size: 2.5rem;
   }
 }

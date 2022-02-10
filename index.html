@@ -26,10 +26,10 @@
             webexhaust
           </h1>
           <div class="header-right">
-            <a onclick="moveToSection1()">Home</a>
-            <a onclick="moveToSection2()">Porfolio</a>
-            <a onclick="moveToSection3()">About</a>
-            <a onclick="moveToSection4()">Hire Me</a>
+            <a class='cursive' onclick="moveToSection1()">Home</a>
+            <a class='cursive' onclick="moveToSection2()">Porfolio</a>
+            <a class='cursive' onclick="moveToSection3()">About</a>
+            <a class='cursive' onclick="moveToSection4()">Hire Me</a>
             <button class="btn-style filled-btn-cream">
               <a target="__blank" href="https://www.fiverr.com/webexhaust">Fiverr Profile</a>
             </button>
@@ -48,10 +48,13 @@
     <div class="header-mob">
       <div class="box">
         <div class="header-mob-content">
-          <a onclick="moveToSection1Mob()">Home</a>
-          <a onclick="moveToSection2Mob()">Porfolio</a>
-          <a onclick="moveToSection3Mob()">About</a>
-          <a onclick="moveToSection4Mob()">Hire Me</a>
+          <a class='cursive' onclick="moveToSection1Mob()">Home</a>
+          <main></main>
+          <a class='cursive' onclick="moveToSection2Mob()">Porfolio</a>
+          <main></main>
+          <a class='cursive' onclick="moveToSection3Mob()">About</a>
+          <main></main>
+          <a class='cursive' onclick="moveToSection4Mob()">Hire Me</a>
         </div>
       </div>
     </div>
@@ -88,6 +91,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Portfolio -->
     <div id="portfolio" class="portfolio section">
       <div class="box">
@@ -525,6 +529,7 @@
       gsap.to(window, {
         scrollTo: {
           y: ".webexhaust",
+          offsetY: 150
         },
         ease: Power4.easeInOut,
       });
@@ -561,6 +566,7 @@
       gsap.to(window, {
         scrollTo: {
           y: ".webexhaust",
+          offsetY: 150
         },
         ease: Power4.easeInOut,
       });
